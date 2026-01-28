@@ -1,0 +1,598 @@
+{
+  "Record": {
+    "RecordType": "CID",
+    "RecordNumber": 2244,
+    "RecordTitle": "Aspirin",
+    "Section": [
+      {
+        "TOCHeading": "Related Records",
+        "Description": "Records related to this compound.  This includes PubChem compound and substance records, as well as records in NCBI resources (e.g., PubMed, Gene, Protein Structure, and Taxonomy) and other databases external to NCBI.",
+        "Section": [
+          {
+            "TOCHeading": "Related Compounds with Annotation",
+            "Description": "Compound records that are closely related to this record AND that have biomedical annotations.  In essence, they are a subset of the compounds included in the \"Related Compounds\" section below this section.  The \"Related Compounds\" include the parent, components, mixtures, and salt forms of this compound record as well as the \"similar compounds\" and \"similar conformers\", which are structurally similar to this record in terms of 2-D and 3-D chemical structure similarity measures, respectively, as explained in Kim et al., J. Cheminform. 2016, 8, 62.",
+            "URL": "https://doi.org/10.1186/s13321-016-0163-1",
+            "Information": [
+              {
+                "ReferenceNumber": 233,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Follow these links to do a live 2D search or do a live 3D search for this compound, sorted by annotation score. This section is deprecated (see the neighbor discontinuation help page for details), but these live search links provide equivalent functionality to the table that was previously shown here.",
+                      "Markup": [
+                        {
+                          "Start": 22,
+                          "Length": 19,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/#query=CID2244%20structure&tab=similarity&sort=annothitcnt"
+                        },
+                        {
+                          "Start": 45,
+                          "Length": 19,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/#query=CID2244%20structure&tab=similarity_3d&sort=annothitcnt"
+                        },
+                        {
+                          "Start": 144,
+                          "Length": 38,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/docs/neighbor-discontinuation"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Related Compounds",
+            "Description": "Compound records closely related to this record.  It includes compounds which are the parent, components, mixtures, and salt forms of this compound record.  It also includes the \"similar compounds\" and \"similar conformers\", which are structurally similar to this record in terms of 2-D and 3-D chemical structure similarity measures, respectively, as explained in Kim et al., J. Cheminform. 2016, 8, 62.",
+            "URL": "https://doi.org/10.1186/s13321-016-0163-1",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 2,
+                "ColumnContents": [
+                  "Name",
+                  "Value"
+                ]
+              },
+              "ShowAtMost": 1
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 233,
+                "Name": "Same Connectivity Count",
+                "URL": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2244/cids/JSON?cids_type=same_connectivity&list_return=redirect",
+                "Value": {
+                  "Number": [
+                    14
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 233,
+                "Name": "Same Parent, Connectivity Count",
+                "URL": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2244/cids/JSON?cids_type=same_parent_connectivity&list_return=redirect",
+                "Value": {
+                  "Number": [
+                    213
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 233,
+                "Name": "Same Parent, Exact Count",
+                "URL": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2244/cids/JSON?cids_type=same_parent&list_return=redirect",
+                "Value": {
+                  "Number": [
+                    200
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 233,
+                "Name": "Mixtures, Components, and Neutralized Forms Count",
+                "URL": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2244/cids/JSON?cids_type=component&list_return=redirect",
+                "Value": {
+                  "Number": [
+                    1134
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 233,
+                "Name": "Similar Compounds (2D)",
+                "URL": "https://pubchem.ncbi.nlm.nih.gov/#query=CID2244%20structure&tab=similarity",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "View in PubChem Search"
+                    }
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 233,
+                "Name": "Similar Conformers (3D)",
+                "URL": "https://pubchem.ncbi.nlm.nih.gov/#query=CID2244%20structure&tab=similarity_3d",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "View in PubChem Search"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Substances",
+            "Description": "Substance records associated with this compound.  In PubChem, the term \"substance\" refers to depositor-provided data for a chemical..",
+            "URL": "https://pubchem.ncbi.nlm.nih.gov/docs/substances",
+            "Section": [
+              {
+                "TOCHeading": "PubChem Reference Collection SID",
+                "Description": "Substances from the special PubChem Reference Collection associated with this compound.",
+                "DisplayControls": {
+                  "MoveToTop": true
+                },
+                "Information": [
+                  {
+                    "ReferenceNumber": 233,
+                    "URL": "https://pubchem.ncbi.nlm.nih.gov/substance/481101427",
+                    "Value": {
+                      "Number": [
+                        481101427
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "TOCHeading": "Related Substances",
+                "Description": "Substance records related to this compound (e.g., the standardized chemical structures of these substances are the same as this compound or correspond to a mixture containing this compound as a component).",
+                "DisplayControls": {
+                  "CreateTable": {
+                    "FromInformationIn": "ThisSection",
+                    "NumberOfColumns": 2,
+                    "ColumnContents": [
+                      "Name",
+                      "Value"
+                    ]
+                  },
+                  "ShowAtMost": 1
+                },
+                "Information": [
+                  {
+                    "ReferenceNumber": 233,
+                    "Name": "All Count",
+                    "URL": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2244/sids/JSON?sids_type=all&list_return=redirect",
+                    "Value": {
+                      "Number": [
+                        3327
+                      ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 233,
+                    "Name": "Same Count",
+                    "URL": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2244/sids/JSON?sids_type=standardized&list_return=redirect",
+                    "Value": {
+                      "Number": [
+                        441
+                      ]
+                    }
+                  },
+                  {
+                    "ReferenceNumber": 233,
+                    "Name": "Mixture Count",
+                    "URL": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2244/sids/JSON?sids_type=component&list_return=redirect",
+                    "Value": {
+                      "Number": [
+                        2886
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "TOCHeading": "Substances by Category",
+                "Description": "Substances associated with this compound, grouped by the category of the data sources who submitted the substances to PubChem (e.g., government organizations, chemical vendors, research and development, curation efforts, NIH initiatives, etc.).",
+                "Information": [
+                  {
+                    "ReferenceNumber": 233,
+                    "Value": {
+                      "StringWithMarkup": [
+                        {
+                          "String": "Chemical Vendors"
+                        },
+                        {
+                          "String": "Curation Efforts"
+                        },
+                        {
+                          "String": "Governmental Organizations"
+                        },
+                        {
+                          "String": "Journal Publishers"
+                        },
+                        {
+                          "String": "Legacy Depositors"
+                        },
+                        {
+                          "String": "NIH Initiatives"
+                        },
+                        {
+                          "String": "Research and Development"
+                        },
+                        {
+                          "String": "Subscription Services"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Other Relationships",
+            "Description": "Other types of related records, such as alternative forms, monomers or polymers, components of important mixtures, etc. In this table, the relationship is in parentheses, and the implied grammar is \"the compound summarized on this page ... has this relationship to ... this item in the table.\"",
+            "DisplayControls": {
+              "ListType": "Columns"
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 233,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Aspirin; caffeine; orphenadrine citrate (component of)",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 39,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/145904"
+                        },
+                        {
+                          "Start": 0,
+                          "Length": 39,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?t=s&cid=145904",
+                          "Type": "Icon"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "Acetaminophen; Aspirin; Caffeine (component of)",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 32,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/9871508"
+                        },
+                        {
+                          "Start": 0,
+                          "Length": 32,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?t=s&cid=9871508",
+                          "Type": "Icon"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "Aspirin; Omeprazole (component of)",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 19,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/16099592"
+                        },
+                        {
+                          "Start": 0,
+                          "Length": 19,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?t=s&cid=16099592",
+                          "Type": "Icon"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "Aspirin; hydrocodone bitartrate (component of)",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 31,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/24936226"
+                        },
+                        {
+                          "Start": 0,
+                          "Length": 31,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?t=s&cid=24936226",
+                          "Type": "Icon"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "Aspirin; Oxycodone Hydrochloride; Oxycodone Terephthalate (component of)",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 57,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/11980079"
+                        },
+                        {
+                          "Start": 0,
+                          "Length": 57,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?t=s&cid=11980079",
+                          "Type": "Icon"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "Aspirin; caffeine; propoxyphene hydrochloride (component of)",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 45,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Aspirin%3B%20caffeine%3B%20propoxyphene%20hydrochloride"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "Aspirin; meprobamate (component of)",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 20,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Aspirin%3B%20meprobamate"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "Acetaminophen; aspirin; codeine phosphate (component of)",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 41,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/24847798"
+                        },
+                        {
+                          "Start": 0,
+                          "Length": 41,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?t=s&cid=24847798",
+                          "Type": "Icon"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "Aspirin; Butalbital; Caffeine (component of)",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 29,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Aspirin%3B%20Butalbital%3B%20Caffeine"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "Aspirin; carisoprodol (component of)",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 21,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/24847791"
+                        },
+                        {
+                          "Start": 0,
+                          "Length": 21,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?t=s&cid=24847791",
+                          "Type": "Icon"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "Aspirin; Butalbital; Caffeine; Codeine Phosphate (component of)",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 48,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/56842252"
+                        },
+                        {
+                          "Start": 0,
+                          "Length": 48,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?t=s&cid=56842252",
+                          "Type": "Icon"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "Aspirin; Caffeine; Dihydrocodeine Bitartrate (component of)",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 44,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Aspirin%3B%20Caffeine%3B%20Dihydrocodeine%20Bitartrate"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "Aspirin; butalbital (component of)",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 19,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Aspirin%3B%20butalbital"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "Aspirin; pravastatin sodium (component of)",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 27,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Aspirin%3B%20pravastatin%20sodium"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "Aspirin; pentazocine hydrochloride (component of)",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 34,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Aspirin%3B%20pentazocine%20hydrochloride"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "Aspirin; carisoprodol; codeine phosphate (component of)",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 40,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/56841602"
+                        },
+                        {
+                          "Start": 0,
+                          "Length": 40,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?t=s&cid=56841602",
+                          "Type": "Icon"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "Aspirin; propoxyphene napsylate (component of)",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 31,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Aspirin%3B%20propoxyphene%20napsylate"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "Aspirin; propoxyphene hydrochloride (component of)",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 35,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Aspirin%3B%20propoxyphene%20hydrochloride"
+                        }
+                      ]
+                    },
+                    {
+                      "String": "Aspirin; Oxycodone Hydrochloride (component of)",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 32,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/compound/Aspirin%3B%20Oxycodone%20Hydrochloride"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Entrez Crosslinks",
+            "Description": "Cross-references to associated records in other Entrez databases such as PubMed, Gene, Protein, etc.",
+            "DisplayControls": {
+              "CreateTable": {
+                "FromInformationIn": "ThisSection",
+                "NumberOfColumns": 2,
+                "ColumnContents": [
+                  "Name",
+                  "Value"
+                ]
+              },
+              "ShowAtMost": 1
+            },
+            "Information": [
+              {
+                "ReferenceNumber": 233,
+                "Name": "PubMed Count",
+                "URL": "https://www.ncbi.nlm.nih.gov/sites/entrez?LinkName=pccompound_pubmed&db=pccompound&cmd=Link&from_uid=2244",
+                "Value": {
+                  "Number": [
+                    26454
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 233,
+                "Name": "Protein Structures Count",
+                "URL": "https://www.ncbi.nlm.nih.gov/sites/entrez?LinkName=pccompound_structure&db=pccompound&cmd=Link&from_uid=2244",
+                "Value": {
+                  "Number": [
+                    8
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 233,
+                "Name": "Taxonomy Count",
+                "URL": "https://www.ncbi.nlm.nih.gov/sites/entrez?LinkName=pccompound_taxonomy&db=pccompound&cmd=Link&from_uid=2244",
+                "Value": {
+                  "Number": [
+                    10
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 233,
+                "Name": "OMIM Count",
+                "URL": "https://www.ncbi.nlm.nih.gov/sites/entrez?LinkName=pccompound_omim&db=pccompound&cmd=Link&from_uid=2244",
+                "Value": {
+                  "Number": [
+                    82
+                  ]
+                }
+              },
+              {
+                "ReferenceNumber": 233,
+                "Name": "Gene Count",
+                "URL": "https://www.ncbi.nlm.nih.gov/sites/entrez?LinkName=pccompound_gene&db=pccompound&cmd=Link&from_uid=2244",
+                "Value": {
+                  "Number": [
+                    806
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "NCBI LinkOut",
+            "Description": "NCBI LinkOut is a service that allows one to link directly from NCBI databases to a wide range of information and services beyond NCBI systems.",
+            "URL": "https://www.ncbi.nlm.nih.gov/projects/linkout/",
+            "Information": [
+              {
+                "ReferenceNumber": 279,
+                "Value": {
+                  "Boolean": [
+                    true
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Reference": [
+      {
+        "ReferenceNumber": 233,
+        "SourceName": "PubChem",
+        "SourceID": "PubChem",
+        "Description": "Data deposited in or computed by PubChem",
+        "URL": "https://pubchem.ncbi.nlm.nih.gov"
+      },
+      {
+        "ReferenceNumber": 279,
+        "SourceName": "NCBI",
+        "SourceID": "LinkOut",
+        "Description": "LinkOut is a service that allows one to link directly from NCBI databases to a wide range of information and services beyond NCBI systems.",
+        "URL": "https://www.ncbi.nlm.nih.gov/projects/linkout"
+      }
+    ]
+  }
+}

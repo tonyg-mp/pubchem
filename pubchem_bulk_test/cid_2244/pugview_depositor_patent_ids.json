@@ -1,0 +1,216 @@
+{
+  "Record": {
+    "RecordType": "CID",
+    "RecordNumber": 2244,
+    "RecordTitle": "Aspirin",
+    "Section": [
+      {
+        "TOCHeading": "Patents",
+        "Description": "Patent applications/documents that mention this compound.",
+        "DisplayControls": {
+          "ListType": "Columns"
+        },
+        "Information": [
+          {
+            "ReferenceNumber": 34,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "US5972916",
+                  "Markup": [
+                    {
+                      "Start": 0,
+                      "Length": 9,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/patent/US5972916"
+                    }
+                  ]
+                },
+                {
+                  "String": "US6015577",
+                  "Markup": [
+                    {
+                      "Start": 0,
+                      "Length": 9,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/patent/US6015577"
+                    }
+                  ]
+                },
+                {
+                  "String": "US6926907",
+                  "Markup": [
+                    {
+                      "Start": 0,
+                      "Length": 9,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/patent/US6926907"
+                    }
+                  ]
+                },
+                {
+                  "String": "US9101637",
+                  "Markup": [
+                    {
+                      "Start": 0,
+                      "Length": 9,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/patent/US9101637"
+                    }
+                  ]
+                },
+                {
+                  "String": "US9226892",
+                  "Markup": [
+                    {
+                      "Start": 0,
+                      "Length": 9,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/patent/US9226892"
+                    }
+                  ]
+                },
+                {
+                  "String": "US8865187",
+                  "Markup": [
+                    {
+                      "Start": 0,
+                      "Length": 9,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/patent/US8865187"
+                    }
+                  ]
+                },
+                {
+                  "String": "US9216150",
+                  "Markup": [
+                    {
+                      "Start": 0,
+                      "Length": 9,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/patent/US9216150"
+                    }
+                  ]
+                },
+                {
+                  "String": "US9351984",
+                  "Markup": [
+                    {
+                      "Start": 0,
+                      "Length": 9,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/patent/US9351984"
+                    }
+                  ]
+                },
+                {
+                  "String": "US9539214",
+                  "Markup": [
+                    {
+                      "Start": 0,
+                      "Length": 9,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/patent/US9539214"
+                    }
+                  ]
+                },
+                {
+                  "String": "US9364439",
+                  "Markup": [
+                    {
+                      "Start": 0,
+                      "Length": 9,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/patent/US9364439"
+                    }
+                  ]
+                },
+                {
+                  "String": "US8206741",
+                  "Markup": [
+                    {
+                      "Start": 0,
+                      "Length": 9,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/patent/US8206741"
+                    }
+                  ]
+                },
+                {
+                  "String": "US9987231",
+                  "Markup": [
+                    {
+                      "Start": 0,
+                      "Length": 9,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/patent/US9987231"
+                    }
+                  ]
+                },
+                {
+                  "String": "US10786444",
+                  "Markup": [
+                    {
+                      "Start": 0,
+                      "Length": 10,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/patent/US10786444"
+                    }
+                  ]
+                },
+                {
+                  "String": "US10646431",
+                  "Markup": [
+                    {
+                      "Start": 0,
+                      "Length": 10,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/patent/US10646431"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "Section": [
+          {
+            "TOCHeading": "Depositor-Supplied Patent Identifiers",
+            "Description": "Patent identifiers provided by data depositors, along with information on those patents.",
+            "Information": [
+              {
+                "ReferenceNumber": 233,
+                "Value": {
+                  "ExternalTableName": "patent"
+                }
+              },
+              {
+                "ReferenceNumber": 233,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Link to all deposited patent identifiers",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 40,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2244/xrefs/PatentID/TXT"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Reference": [
+      {
+        "ReferenceNumber": 34,
+        "SourceName": "DrugBank",
+        "SourceID": "DB00945",
+        "Name": "Acetylsalicylic acid",
+        "Description": "The DrugBank database is a unique bioinformatics and cheminformatics resource that combines detailed drug (i.e. chemical, pharmacological and pharmaceutical) data with comprehensive drug target (i.e. sequence, structure, and pathway) information.",
+        "URL": "https://www.drugbank.ca/drugs/DB00945",
+        "LicenseNote": "Creative Common's Attribution-NonCommercial 4.0 International License (http://creativecommons.org/licenses/by-nc/4.0/legalcode)",
+        "LicenseURL": "https://www.drugbank.ca/legal/terms_of_use",
+        "ANID": 3594228
+      },
+      {
+        "ReferenceNumber": 233,
+        "SourceName": "PubChem",
+        "SourceID": "PubChem",
+        "Description": "Data deposited in or computed by PubChem",
+        "URL": "https://pubchem.ncbi.nlm.nih.gov"
+      }
+    ]
+  }
+}

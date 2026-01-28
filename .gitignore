@@ -1,0 +1,66 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.pytype/
+ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+.ipynb_checkpoints/
+.pyenv/
+.venv/
+venv/
+ENV/
+env/
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---- Logs / temp ----
+*.log
+*.tmp
+*.temp
+*.bak
+
+# ---- Data + outputs (generated) ----
+# caches
+**/cache_json/
+**/cache_json_rxcui/
+
+# run outputs / exports
+**/out_*/
+**/single_files/
+*.parquet
+*.xlsx
+*.csv
+*.tsv
+*.jsonl
+*.zip
+
+# processed markers and other run artifacts
+**/processed_cids.txt
+
+# local staging / share folders (not source)
+thomas_data/
+
+# ---- Optional: ignore large raw downloads (openFDA shards) ----
+openfda_pull/drug-label-*.json
+
+# ---- Optional: ignore sample payloads (keep if you want fixtures) ----
+pubchem_pull/pugview_samples/
+pubchem_pull/out_pugview/
+
+# ---- If you generate local notes ----
+notes/

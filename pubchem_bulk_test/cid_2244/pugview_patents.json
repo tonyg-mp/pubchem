@@ -1,0 +1,414 @@
+{
+  "Record": {
+    "RecordType": "CID",
+    "RecordNumber": 2244,
+    "RecordTitle": "Aspirin",
+    "Section": [
+      {
+        "TOCHeading": "Patents",
+        "Description": "Patent applications/documents that mention this compound.",
+        "DisplayControls": {
+          "ListType": "Columns"
+        },
+        "Information": [
+          {
+            "ReferenceNumber": 34,
+            "Value": {
+              "StringWithMarkup": [
+                {
+                  "String": "US5972916",
+                  "Markup": [
+                    {
+                      "Start": 0,
+                      "Length": 9,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/patent/US5972916"
+                    }
+                  ]
+                },
+                {
+                  "String": "US6015577",
+                  "Markup": [
+                    {
+                      "Start": 0,
+                      "Length": 9,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/patent/US6015577"
+                    }
+                  ]
+                },
+                {
+                  "String": "US6926907",
+                  "Markup": [
+                    {
+                      "Start": 0,
+                      "Length": 9,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/patent/US6926907"
+                    }
+                  ]
+                },
+                {
+                  "String": "US9101637",
+                  "Markup": [
+                    {
+                      "Start": 0,
+                      "Length": 9,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/patent/US9101637"
+                    }
+                  ]
+                },
+                {
+                  "String": "US9226892",
+                  "Markup": [
+                    {
+                      "Start": 0,
+                      "Length": 9,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/patent/US9226892"
+                    }
+                  ]
+                },
+                {
+                  "String": "US8865187",
+                  "Markup": [
+                    {
+                      "Start": 0,
+                      "Length": 9,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/patent/US8865187"
+                    }
+                  ]
+                },
+                {
+                  "String": "US9216150",
+                  "Markup": [
+                    {
+                      "Start": 0,
+                      "Length": 9,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/patent/US9216150"
+                    }
+                  ]
+                },
+                {
+                  "String": "US9351984",
+                  "Markup": [
+                    {
+                      "Start": 0,
+                      "Length": 9,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/patent/US9351984"
+                    }
+                  ]
+                },
+                {
+                  "String": "US9539214",
+                  "Markup": [
+                    {
+                      "Start": 0,
+                      "Length": 9,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/patent/US9539214"
+                    }
+                  ]
+                },
+                {
+                  "String": "US9364439",
+                  "Markup": [
+                    {
+                      "Start": 0,
+                      "Length": 9,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/patent/US9364439"
+                    }
+                  ]
+                },
+                {
+                  "String": "US8206741",
+                  "Markup": [
+                    {
+                      "Start": 0,
+                      "Length": 9,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/patent/US8206741"
+                    }
+                  ]
+                },
+                {
+                  "String": "US9987231",
+                  "Markup": [
+                    {
+                      "Start": 0,
+                      "Length": 9,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/patent/US9987231"
+                    }
+                  ]
+                },
+                {
+                  "String": "US10786444",
+                  "Markup": [
+                    {
+                      "Start": 0,
+                      "Length": 10,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/patent/US10786444"
+                    }
+                  ]
+                },
+                {
+                  "String": "US10646431",
+                  "Markup": [
+                    {
+                      "Start": 0,
+                      "Length": 10,
+                      "URL": "https://pubchem.ncbi.nlm.nih.gov/patent/US10646431"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "Section": [
+          {
+            "TOCHeading": "Depositor-Supplied Patent Identifiers",
+            "Description": "Patent identifiers provided by data depositors, along with information on those patents.",
+            "Information": [
+              {
+                "ReferenceNumber": 233,
+                "Value": {
+                  "ExternalTableName": "patent"
+                }
+              },
+              {
+                "ReferenceNumber": 233,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Link to all deposited patent identifiers",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 40,
+                          "URL": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2244/xrefs/PatentID/TXT"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "WIPO PATENTSCOPE",
+            "Description": "Use the provided link to show patents associated with this chemical structure in WIPO's PATENTSCOPE system.",
+            "URL": "https://www.wipo.int/patentscope/en/",
+            "Information": [
+              {
+                "ReferenceNumber": 278,
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "Patents are available for this chemical structure:"
+                    },
+                    {
+                      "String": "https://patentscope.wipo.int/search/en/result.jsf?inchikey=BSYNRYMUTXBXSQ-UHFFFAOYSA-N",
+                      "Markup": [
+                        {
+                          "Start": 0,
+                          "Length": 86,
+                          "URL": "https://patentscope.wipo.int/search/en/result.jsf?inchikey=BSYNRYMUTXBXSQ-UHFFFAOYSA-N"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "FDA Orange Book Patents",
+            "Description": "Patents listed for this chemical in the Orange Book published by U.S. Food and Drug Administration (FDA). The Orange Book identifies FDA-approved drug products and related patent and exclusivity information.",
+            "URL": "https://www.fda.gov/drugs/drug-approvals-and-databases/approved-drug-products-therapeutic-equivalence-evaluations-orange-book",
+            "Information": [
+              {
+                "ReferenceNumber": 58,
+                "Value": {
+                  "ExternalTableName": "collection=fdaorgpt&query_type=synonym&query='^ASPIRIN$'"
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Chemical Co-Occurrences in Patents",
+            "Description": "Chemical co-occurrences in patents highlight chemicals mentioned together in patent documents. This may suggest that an important relationship exists between the two. Please note that this content is not human curated. It is generated by text-mining algorithms that can be fooled such that a co-occurrence may be happenstance or a casual mention. The lists are ordered by relevancy as indicated by count of patents and other statistics, with the most relevant mentions appearing at the top.",
+            "Information": [
+              {
+                "ReferenceNumber": 233,
+                "Name": "Co-Occurrence Panel",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "PatentChemicalChemical"
+                    },
+                    {
+                      "String": "Chemical"
+                    },
+                    {
+                      "String": "ChemicalName"
+                    },
+                    {
+                      "String": "NeighborName"
+                    },
+                    {
+                      "String": "SUMMARY_URL.cid"
+                    },
+                    {
+                      "String": "CID"
+                    },
+                    {
+                      "String": "CID"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Chemical-Disease Co-Occurrences in Patents",
+            "Description": "Disease co-occurrences in patents highlight chemicals and diseases mentioned together in patent documents. This may suggest that an important relationship exists between the two. Please note that this content is not human curated. It is generated by text-mining algorithms that can be fooled such that a co-occurrence may be happenstance or a casual mention. The lists are ordered by relevancy as indicated by count of patents and other statistics, with the most relevant mentions appearing at the top.",
+            "Information": [
+              {
+                "ReferenceNumber": 233,
+                "Name": "Co-Occurrence Panel",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "PatentChemicalDisease"
+                    },
+                    {
+                      "String": "Disease"
+                    },
+                    {
+                      "String": "ChemicalName"
+                    },
+                    {
+                      "String": "NeighborName"
+                    },
+                    {
+                      "String": "https://meshb.nlm.nih.gov/record/ui?ui="
+                    },
+                    {
+                      "String": "CID"
+                    },
+                    {
+                      "String": "MeSH"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Chemical-Gene Co-Occurrences in Patents",
+            "Description": "Gene co-occurrences in patents highlight chemicals and genes mentioned together in patent documents. This may suggest that an important relationship exists between the two. Please note that this content is not human curated. It is generated by text-mining algorithms that can be fooled such that a co-occurrence may be happenstance or a casual mention. The lists are ordered by relevancy as indicated by count of patents and other statistics, with the most relevant mentions appearing at the top.",
+            "Information": [
+              {
+                "ReferenceNumber": 233,
+                "Name": "Co-Occurrence Panel",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "PatentChemicalGene"
+                    },
+                    {
+                      "String": "Gene"
+                    },
+                    {
+                      "String": "ChemicalName"
+                    },
+                    {
+                      "String": "NeighborName"
+                    },
+                    {
+                      "String": "https://pubchem.ncbi.nlm.nih.gov/gene/SYMBOL:"
+                    },
+                    {
+                      "String": "CID"
+                    },
+                    {
+                      "String": "GeneSymbol"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "TOCHeading": "Chemical-Organism Co-Occurrences in Patents",
+            "Description": "Gene co-occurrences in patents highlight chemicals and organisms mentioned together in patent documents. This may suggest that an important relationship exists between the two. Please note that this content is not human curated. It is generated by text-mining algorithms that can be fooled such that a co-occurrence may be happenstance or a casual mention. The lists are ordered by relevancy as indicated by count of patents and other statistics, with the most relevant mentions appearing at the top.",
+            "Information": [
+              {
+                "ReferenceNumber": 233,
+                "Name": "Co-Occurrence Panel",
+                "Value": {
+                  "StringWithMarkup": [
+                    {
+                      "String": "PatentChemicalOrganism"
+                    },
+                    {
+                      "String": "Organism"
+                    },
+                    {
+                      "String": "ChemicalName"
+                    },
+                    {
+                      "String": "NeighborName"
+                    },
+                    {
+                      "String": "https://pubchem.ncbi.nlm.nih.gov/taxonomy/"
+                    },
+                    {
+                      "String": "CID"
+                    },
+                    {
+                      "String": "TaxonomyID"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Reference": [
+      {
+        "ReferenceNumber": 34,
+        "SourceName": "DrugBank",
+        "SourceID": "DB00945",
+        "Name": "Acetylsalicylic acid",
+        "Description": "The DrugBank database is a unique bioinformatics and cheminformatics resource that combines detailed drug (i.e. chemical, pharmacological and pharmaceutical) data with comprehensive drug target (i.e. sequence, structure, and pathway) information.",
+        "URL": "https://www.drugbank.ca/drugs/DB00945",
+        "LicenseNote": "Creative Common's Attribution-NonCommercial 4.0 International License (http://creativecommons.org/licenses/by-nc/4.0/legalcode)",
+        "LicenseURL": "https://www.drugbank.ca/legal/terms_of_use",
+        "ANID": 3594228
+      },
+      {
+        "ReferenceNumber": 58,
+        "SourceName": "FDA Orange Book",
+        "SourceID": "fed968a7ae39c99920dab6c54b5a97eb",
+        "Name": "ASPIRIN",
+        "Description": "The publication, Approved Drug Products with Therapeutic Equivalence Evaluations (the List, commonly known as the Orange Book), identifies drug products approved on the basis of safety and effectiveness by the Food and Drug Administration (FDA) under the Federal Food, Drug, and Cosmetic Act (the Act).",
+        "URL": "https://www.fda.gov/drugs/drug-approvals-and-databases/approved-drug-products-therapeutic-equivalence-evaluations-orange-book",
+        "LicenseNote": "Unless otherwise noted, the contents of the FDA website (www.fda.gov), both text and graphics, are not copyrighted. They are in the public domain and may be republished, reprinted and otherwise used freely by anyone without the need to obtain permission from FDA. Credit to the U.S. Food and Drug Administration as the source is appreciated but not required.",
+        "LicenseURL": "https://www.fda.gov/about-fda/about-website/website-policies#linking",
+        "ANID": 35233905
+      },
+      {
+        "ReferenceNumber": 233,
+        "SourceName": "PubChem",
+        "SourceID": "PubChem",
+        "Description": "Data deposited in or computed by PubChem",
+        "URL": "https://pubchem.ncbi.nlm.nih.gov"
+      },
+      {
+        "ReferenceNumber": 278,
+        "SourceName": "PATENTSCOPE (WIPO)",
+        "Name": "SID 403030282",
+        "Description": "The PATENTSCOPE database from WIPO includes patent and chemical structure search (with a free account) that gives access to millions of patent documents. The World Intellectual Property Organisation (WIPO) is a specialized United Nations (UN) agency headquartered in Geneva (Switzerland). Our mission is to lead the development of a balanced and effective international Intellectual Property (IP) system that enables innovation and creativity for the benefit of all. We help governments, businesses and society realize the benefits of Intellectual Property and are notably a world reference source for IP information.",
+        "URL": "https://pubchem.ncbi.nlm.nih.gov/substance/403030282"
+      }
+    ]
+  }
+}
