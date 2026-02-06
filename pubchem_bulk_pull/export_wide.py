@@ -206,17 +206,22 @@ def main():
     pat_agg["patent_ids_n"] = pat_agg["patent_ids_list"].apply(lambda x: len(x) if isinstance(x, list) else 0)
     pat_agg["patent_ids_preview"] = pat_agg["patent_ids_list"].apply(lambda x: _safe_preview_list(x, 25) if isinstance(x, list) else "")
 
+    # Aggregate MeSH pharmacological classifications (multiple per CID)
     mesh_agg = pd.DataFrame({"cid": core["cid"]})
     if not mesh.empty:
+        # Clean MeSH data
         mesh = mesh.dropna(subset=["cid"]).copy()
         cols = ["mesh_name", "mesh_description", "reference_number", "raw_info_json"]
+        # Ensure all expected columns exist
         for c in cols:
             if c not in mesh.columns:
                 mesh[c] = None
 
+        # Helper to convert rows to structured objects with parsed JSON
         def rows_to_objs(df: pd.DataFrame) -> list[dict[str, Any]]:
             out: list[dict[str, Any]] = []
             for _, r in df.iterrows():
+                # Parse raw_info_json if present
                 raw_obj = _try_json_loads(r.get("raw_info_json"))
                 out.append(
                     {
@@ -228,11 +233,13 @@ def main():
                 )
             return out
 
+        # Group by CID to create lists of mesh classification objects
         g = mesh.groupby("cid").apply(rows_to_objs).reset_index(name="mesh_classes_list")
         mesh_agg = mesh_agg.merge(g, on="cid", how="left")
     else:
         mesh_agg["mesh_classes_list"] = None
 
+    # Create mesh columns: JSON, count, and preview
     mesh_agg["mesh_classes_json"] = mesh_agg["mesh_classes_list"].apply(lambda x: _json_dumps(x) if isinstance(x, list) else _json_dumps([]))
     mesh_agg["mesh_classes_n"] = mesh_agg["mesh_classes_list"].apply(lambda x: len(x) if isinstance(x, list) else 0)
     mesh_agg["mesh_classes_preview"] = mesh_agg["mesh_classes_list"].apply(
