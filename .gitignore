@@ -14,7 +14,8 @@ build/
 .eggs/
 pip-wheel-metadata/
 .ipynb_checkpoints/
-.pyenv/
+
+# ---- Virtualenv ----
 .venv/
 venv/
 ENV/
@@ -34,33 +35,23 @@ Thumbs.db
 *.temp
 *.bak
 
-# ---- Data + outputs (generated) ----
-# caches
+# ---- Project generated data + outputs ----
+data/
+out_*/
+**/single_files/
+thomas_data/
 **/cache_json/
 **/cache_json_rxcui/
+**/processed_cids.txt
 
-# run outputs / exports
-**/out_*/
-**/single_files/
+# ---- Generated datasets / archives ----
 *.parquet
 *.xlsx
 *.csv
 *.tsv
 *.jsonl
+*.gz
 *.zip
 
-# processed markers and other run artifacts
-**/processed_cids.txt
-
-# local staging / share folders (not source)
-thomas_data/
-
-# ---- Optional: ignore large raw downloads (openFDA shards) ----
-openfda_pull/drug-label-*.json
-
-# ---- Optional: ignore sample payloads (keep if you want fixtures) ----
-pubchem_pull/pugview_samples/
-pubchem_pull/out_pugview/
-
-# ---- If you generate local notes ----
+# ---- Local notes ----
 notes/

@@ -9,17 +9,47 @@ import pandas as pd
 
 
 def _read_parts(folder: Path) -> pd.DataFrame:
+    """
+    Load and concatenate multiple parquet files from a directory.
+    
+    Reads all files matching "part-*.parquet" pattern, sorts them alphabetically,
+    and concatenates into a single DataFrame.
+    
+    Args:
+        folder: Directory containing parquet files
+    Returns:
+        DataFrame with concatenated data, or empty DataFrame if no files found
+    """
+    # Find all part files and sort them
     parts = sorted(folder.glob("part-*.parquet"))
     if not parts:
         return pd.DataFrame()
+    # Concatenate and reset index
     return pd.concat([pd.read_parquet(p) for p in parts], ignore_index=True)
 
 
 def _json_dumps(x: Any) -> str:
+    """
+    Serialize object to JSON string, preserving Unicode characters.
+    
+    Args:
+        x: Object to serialize
+    Returns:
+        JSON string with ensure_ascii=False to preserve Unicode
+    """
     return json.dumps(x, ensure_ascii=False)
 
 
 def _try_json_loads(x: Any) -> Any:
+    """
+    Safely parse JSON string, returning None if parsing fails.
+    
+    Args:
+        x: Potential JSON string to parse
+    Returns:
+        Parsed object, or None if x is not a string or JSON parsing fails
+    """
+    # Only attempt to parse strings
     if not isinstance(x, str) or not x:
         return None
     try:
@@ -29,20 +59,59 @@ def _try_json_loads(x: Any) -> Any:
 
 
 def _safe_preview_list(vals: list[str], k: int = 20) -> str:
+    """
+    Create a preview string from a list of values.
+    
+    Takes the first k items, filters to strings only, and joins with "; ".
+    Used for Excel preview columns to show sample data without full content.
+    
+    Args:
+        vals: List of values to preview
+        k: Maximum number of items to include (default: 20)
+    Returns:
+        String preview joined by "; "
+    """
+    # Filter to only string values
     vals = [v for v in vals if isinstance(v, str)]
+    # Limit to k items
     vals = vals[:k]
+    # Join with semicolon separator
     return "; ".join(vals)
 
 
 def _truncate_for_excel(s: Any, limit: int = 30000) -> Any:
+    """
+    Truncate string to fit Excel cell character limit.
+    
+    Excel has a ~32k character limit per cell. This function truncates with
+    an ellipsis indicator if needed. Non-strings are returned unchanged.
+    
+    Args:
+        s: Value to potentially truncate
+        limit: Character limit (default: 30000 to leave margin)
+    Returns:
+        Original value if string is short, truncated with "…" if too long, or original non-string
+    """
+    # Return non-strings unchanged
     if not isinstance(s, str):
         return s
+    # Return as-is if short enough
     if len(s) <= limit:
         return s
+    # Truncate and add ellipsis
     return s[:limit] + "…"
 
 
 def main():
+    """
+    Consolidate all parquet files into a single wide-format table.
+    
+    Process:
+    1. Load all individual parquet files (core properties, synonyms, patents, classifications)
+    2. Aggregate multi-value fields (synonyms, patents, classifications) into lists and JSON
+    3. Join all data by CID into a wide format
+    4. Output as parquet (full data) and Excel (preview, limited rows)
+    """
     ap = argparse.ArgumentParser()
     ap.add_argument("--in-dir", required=True, help="Directory with *.parquet OR outdir root containing part folders.")
     ap.add_argument("--out-parquet", required=True)
@@ -52,7 +121,9 @@ def main():
 
     in_dir = Path(args.in_dir)
 
+    # Load data: check if consolidated parquet files or part folder structure
     if (in_dir / "core_properties.parquet").exists():
+        # Load consolidated parquet files (single file per data type)
         core = pd.read_parquet(in_dir / "core_properties.parquet")
         heading_meta = pd.read_parquet(in_dir / "heading_meta.parquet") if (in_dir / "heading_meta.parquet").exists() else pd.DataFrame()
         syn = pd.read_parquet(in_dir / "depositor_synonyms.parquet") if (in_dir / "depositor_synonyms.parquet").exists() else pd.DataFrame()
@@ -62,6 +133,7 @@ def main():
         rawh = pd.read_parquet(in_dir / "pugview_raw_headings.parquet") if (in_dir / "pugview_raw_headings.parquet").exists() else pd.DataFrame()
         titles = pd.read_parquet(in_dir / "cid_title.parquet") if (in_dir / "cid_title.parquet").exists() else pd.DataFrame()
     else:
+        # Load partitioned data (multiple part-XXXXX.parquet files in folders)
         core = _read_parts(in_dir / "core_properties")
         heading_meta = _read_parts(in_dir / "heading_meta")
         syn = _read_parts(in_dir / "depositor_synonyms")
@@ -74,8 +146,10 @@ def main():
     if core.empty or "cid" not in core.columns:
         raise SystemExit("core_properties missing or empty")
 
+    # Deduplicate core properties (remove duplicate CID rows)
     core = core.drop_duplicates(subset=["cid"]).copy()
 
+    # Aggregate titles (one per CID, use first if multiple exist)
     title_agg = pd.DataFrame({"cid": core["cid"]})
     if not titles.empty and "cid" in titles.columns:
         if "title" not in titles.columns:
@@ -84,40 +158,50 @@ def main():
         titles["cid"] = titles["cid"].astype(int)
         titles["title"] = titles["title"].astype(str)
         titles = titles.drop_duplicates(subset=["cid"])
+        # Merge to add title column
         title_agg = title_agg.merge(titles[["cid", "title"]], on="cid", how="left")
     else:
         title_agg["title"] = None
 
+    # Aggregate synonyms (multiple per CID)
     syn_agg = pd.DataFrame({"cid": core["cid"]})
     if not syn.empty:
+        # Clean and deduplicate synonym data
         syn = syn.dropna(subset=["cid", "synonym"]).copy()
         syn["synonym"] = syn["synonym"].astype(str)
         syn = syn.drop_duplicates(subset=["cid", "synonym"])
+        # Group by CID to create lists of synonyms
         g = syn.groupby("cid")["synonym"].apply(list).reset_index(name="synonyms_list")
         syn_agg = syn_agg.merge(g, on="cid", how="left")
     else:
         syn_agg["synonyms_list"] = None
 
+    # Helper function to get first synonym
     def first_syn(x: Any) -> Any:
         if isinstance(x, list) and x:
             return x[0]
         return None
 
+    # Create synonym columns: JSON, count, preview, and first synonym as fallback name
     syn_agg["synonyms_json"] = syn_agg["synonyms_list"].apply(lambda x: _json_dumps(x) if isinstance(x, list) else _json_dumps([]))
     syn_agg["synonyms_n"] = syn_agg["synonyms_list"].apply(lambda x: len(x) if isinstance(x, list) else 0)
     syn_agg["synonyms_preview"] = syn_agg["synonyms_list"].apply(lambda x: _safe_preview_list(x, 25) if isinstance(x, list) else "")
     syn_agg["primary_name_from_synonyms"] = syn_agg["synonyms_list"].apply(first_syn)
 
+    # Aggregate patent IDs (multiple per CID)
     pat_agg = pd.DataFrame({"cid": core["cid"]})
     if not pat.empty:
+        # Clean and deduplicate patent data
         pat = pat.dropna(subset=["cid", "patent_id"]).copy()
         pat["patent_id"] = pat["patent_id"].astype(str)
         pat = pat.drop_duplicates(subset=["cid", "patent_id"])
+        # Group by CID to create lists of patent IDs
         g = pat.groupby("cid")["patent_id"].apply(list).reset_index(name="patent_ids_list")
         pat_agg = pat_agg.merge(g, on="cid", how="left")
     else:
         pat_agg["patent_ids_list"] = None
 
+    # Create patent columns: JSON, count, and preview
     pat_agg["patent_ids_json"] = pat_agg["patent_ids_list"].apply(lambda x: _json_dumps(x) if isinstance(x, list) else _json_dumps([]))
     pat_agg["patent_ids_n"] = pat_agg["patent_ids_list"].apply(lambda x: len(x) if isinstance(x, list) else 0)
     pat_agg["patent_ids_preview"] = pat_agg["patent_ids_list"].apply(lambda x: _safe_preview_list(x, 25) if isinstance(x, list) else "")
