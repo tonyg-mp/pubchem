@@ -189,7 +189,7 @@ def main():
     print("cache_dir:", str(cache_dir) if cache_dir else "None")
     
     # Load CID list
-    cids_all = _read_id_list(Path(args.cid_list), args.max_ids)
+    cids_all = _read_id_list(Path(args.cid_list), args.max_cids)
     cids = [c for c in cids_all if c not in processed]
     print("cids_total_in_list:", len(cids_all))
     print("already_processed:", len(processed))
